@@ -1,16 +1,58 @@
-# React + Vite
+# ♻ Recycling Production Line Manager Selection System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal, standalone system for evaluating and ranking candidates for a Recycling Production Line Manager role.
 
-Currently, two official plugins are available:
+Built using:
+- React + Vite
+- Mantine UI
+- Recharts
+- MySQL (Schema Design)
+- AI Prompt-Based Evaluation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This system demonstrates:
 
-## Expanding the ESLint configuration
+- 📊 Candidate ranking dashboard
+- 🧠 AI-based evaluation scoring
+- 🗄 Normalized MySQL database design
+- 🎯 Skill-based realistic candidate generation
+- 📈 Leaderboard & score visualization
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The system ranks candidates based on three AI evaluation criteria:
+
+1. Crisis Management
+2. Sustainability Knowledge
+3. Team Motivation
+
+Each candidate receives a score (1–100 per category), with a maximum total score of **300**.
+
+---
+
+## 🗂 Project Structure
+
+recycling-manager-system/
+│
+├── index.html
+├── package.json
+├── README.md
+│
+├── src/
+│ ├── App.jsx
+│ ├── main.jsx
+│ ├── index.css
+│ ├── Dashboard.module.css
+│ └── data/
+│   └── candidates.js
+│
+├── sql/
+│ ├── schema.sql
+│ └── seed_data.sql
+│
+├── scripts/
+│ └── generateData.js
+│
+└── ai-prompts/
+  └── evaluation_rubric.md

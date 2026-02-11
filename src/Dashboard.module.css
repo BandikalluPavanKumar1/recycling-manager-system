@@ -1,0 +1,58 @@
+/* src/Dashboard.module.css */
+
+.dashboardContainer {
+  min-height: 100vh;
+  padding: var(--mantine-spacing-xl);
+  background-color: var(--mantine-color-gray-0);
+}
+
+.chartCard {
+  min-height: 300px;
+  max-height: 400px;
+  margin-bottom: var(--mantine-spacing-xl);
+}
+
+.leaderboardTable {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--mantine-color-white);
+  box-shadow: var(--mantine-shadow-sm);
+}
+
+.leaderboardTable thead {
+  background-color: var(--mantine-color-blue-6);
+}
+
+.leaderboardTable thead th {
+  color: var(--mantine-color-white) !important;
+  font-weight: 600;
+}
+
+.heatmapContainer {
+  width: 100%;
+  min-height: 280px;
+}
+
+.candidateGrid {
+  margin-top: var(--mantine-spacing-xl);
+}
+
+.cardHover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardHover:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--mantine-shadow-md);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .dashboardContainer {
+    padding: var(--mantine-spacing-md);
+  }
+
+  .chartCard {
+    min-height: 250px;
+  }
+}
